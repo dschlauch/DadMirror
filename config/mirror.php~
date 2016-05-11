@@ -6,5 +6,5 @@ $url = 'https://dl.dropboxusercontent.com/u/20684161/greetings';
 $str = file_get_contents($url);
 
 return [
-	'greetings' => explode("\n",$str)
+	'greetings' => explode("\n\n",$str)
 ];
