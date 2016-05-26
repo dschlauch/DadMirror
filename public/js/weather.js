@@ -2,7 +2,7 @@
         var updateWeather = function () {
           $.simpleWeather({
             location: '',
-            woeid: '2367105',
+            woeid: '12758729',
             unit: 'f',
             success: function(weather) {
                 var skycons = new Skycons({"color": "white"});
