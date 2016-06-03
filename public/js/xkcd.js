@@ -11,7 +11,7 @@
 				src: data.img,
 				title: data.alt,
 				alt: data.title,
-				width: "600px"
+				width: "400px"
 			    })
 			);
 		    }
