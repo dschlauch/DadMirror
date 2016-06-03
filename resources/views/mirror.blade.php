@@ -21,22 +21,19 @@
     </head>
     <body>
         <section>
-            <div id="date">
-				
-            </div>
-            <div id="weather">
-				
-            </div>
-			<div id="pianobar">
-				
-			</div>
+            <div id=wrapper>
+		<div id="date"></div>
+		<div id="xkcd"></div>
+	    </div>		
+            <div id="weather"></div>
+	    		
         </section>
         <p id="greeting">
             {{ $greeting }}
         </p>
         <script type="text/javascript" src="/js/clock.js"></script>
         <script type="text/javascript" src="/js/weather.js"></script>
-	<script type="text/javascript" src="/js/pianobar.js"></script>
+	<script type="text/javascript" src="/js/xkcd.js"></script>
         <script type="text/javascript">
             var gitHash = {{ trim(`git rev-parse HEAD`) }};
                (function checkVersion()

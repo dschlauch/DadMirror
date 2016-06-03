@@ -116,6 +116,13 @@ canvas {
     margin-top: 8px;
 }
 
+#wrapper {
+    float: left;
+    width: 400px;
+<!--    height:500px;-->
+    margin: 0 0 0 0;
+}
+
 #date {
     float: left;
     width: 400px;
@@ -126,6 +133,11 @@ canvas {
 #date p:first-child{
     font-size: 1.85em;
 }
+#xkcd {
+    width: 400px;
+    margin: 0 0 0 0;
+}
+
 
 #time {
     font-size: 4em;

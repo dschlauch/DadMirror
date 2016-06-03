@@ -21,22 +21,17 @@
     </head>
     <body>
         <section>
-            <div id="date">
-				
-            </div>
-            <div id="weather">
-				
-            </div>
-			<div id="pianobar">
-				
-			</div>
+		<div id="date"></div>
+		<div id="xkcd"></div>
+            <div id="weather"></div>
+	    		
         </section>
         <p id="greeting">
             {{ $greeting }}
         </p>
         <script type="text/javascript" src="/js/clock.js"></script>
         <script type="text/javascript" src="/js/weather.js"></script>
-	<script type="text/javascript" src="/js/pianobar.js"></script>
+	<script type="text/javascript" src="/js/xkcd.js"></script>
         <script type="text/javascript">
             var gitHash = {{ trim(`git rev-parse HEAD`) }};
                (function checkVersion()
@@ -56,7 +51,7 @@
         </script>
 
 	<script>
-	setTimeout("location.reload(true);", 10000);
+	setTimeout("location.reload(true);", 1200000);
 	</script>
     </body>
 </html>
