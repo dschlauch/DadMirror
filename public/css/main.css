@@ -105,8 +105,9 @@ body {
     text-align: center;
     font-size: 3em;
     position: fixed;
+    padding: 30px;
     bottom: 0;
-    width: 100%; 
+    width: 90%;
 }
 
 canvas {
@@ -148,7 +149,7 @@ section {
     width: 90%;
     margin: auto;
     height:600px;
-    padding: 10px;
+    padding: 0px;
 }
 
 #pianobar img {
@@ -161,7 +162,6 @@ section {
 }
 
 #pianobar {
-    float: left;
     border: white;
 }
 
