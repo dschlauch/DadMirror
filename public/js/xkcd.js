@@ -20,7 +20,7 @@
 				}
 			});
 		    } else {
-			document.getElementById("xkcd").innerHTML = "no";
+			document.getElementById("xkcd").innerHTML = "";
 		    }
 
 
