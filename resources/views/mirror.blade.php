@@ -22,6 +22,7 @@
     <body>
         <section>
             <div id=wrapper>
+		<div id="welcome"></div>
 		<div id="date"></div>
 		<div id="xkcd"></div>
 		<div id="mbta"></div>
@@ -32,6 +33,7 @@
         <p id="greeting">
             {{ $greeting }}
         </p>
+        <script type="text/javascript" src="/js/welcome.js"></script>
         <script type="text/javascript" src="/js/clock.js"></script>
         <script type="text/javascript" src="/js/weather.js"></script>
 	<script type="text/javascript" src="/js/xkcd.js"></script>

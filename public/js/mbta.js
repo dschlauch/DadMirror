@@ -30,7 +30,7 @@ var updateMBTA = function () {
 				return 0;
 			});
 			$("#mbta").empty().append(
-			    $("<h2/>").text(data.mode[0].mode_name + " "+data.mode[0].route[0].route_name+" "+data.mode[0].route[0].direction[0].direction_name),
+			    $("<h2/>").text(data.mode[0].mode_name + " "+data.mode[0].route[0].route_name+" "+data.mode[0].route[0].direction[0].direction_name + " - leaving in..."),
 			    $("<h2/>").text(predictString.join(', '))
 			);
 		}
