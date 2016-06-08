@@ -1,7 +1,7 @@
 var updateXKCD = function () {
     var d = new Date();
     var n = d.getDay()%2
-    if (n==1){
+    if (n==0){
 	$.ajax({
 		url: "http://dynamic.xkcd.com/api-0/jsonp/comic?callback=?",
 		dataType: "json",
