@@ -21,8 +21,10 @@
     </head>
     <body>
         <section>
+            <div id=wrapper>
 		<div id="date"></div>
 		<div id="xkcd"></div>
+	    </div>		
             <div id="weather"></div>
 	    		
         </section>
