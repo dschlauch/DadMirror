@@ -11,5 +11,5 @@ var update = function () {
 $(document).ready(function() {
     datetime = $('#date');
     update();
-    setInterval(update, 10000);
+    setInterval(update, 60000);
 });

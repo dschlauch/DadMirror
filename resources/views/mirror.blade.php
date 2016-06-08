@@ -35,6 +35,7 @@
         <script type="text/javascript" src="/js/clock.js"></script>
         <script type="text/javascript" src="/js/weather.js"></script>
 	<script type="text/javascript" src="/js/xkcd.js"></script>
+	<script type="text/javascript" src="/js/mbta.js"></script>
         <script type="text/javascript">
             var gitHash = {{ trim(`git rev-parse HEAD`) }};
                (function checkVersion()
