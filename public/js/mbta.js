@@ -1,6 +1,10 @@
 var updateMBTA = function () {
+	var key = "gZy1MzcaiUmM3urqsYGpQQ";
+	var route = "39";
+	var stop = "1937";
+	var mbtaurl = "http://realtime.mbta.com/developer/api/v2/predictionsbystop?api_key="+key+"&stop="+stop+"&route="+route+"&format=json";
 	$.ajax({
-		url: "http://realtime.mbta.com/developer/api/v2/predictionsbystop?api_key=wX9NwuHnZU2ToO7GmGR9uw&stop=1937&route=39&format=json",
+		url: mbtaurl,
 		dataType: "json",
 		jsonpCallback: "mbtadata",
 		success: function(data) {
@@ -26,13 +30,13 @@ var updateMBTA = function () {
 				return 0;
 			});
 			$("#mbta").empty().append(
-			    $("<h2/>").text("39 Bus Inbound"),
+			    $("<h2/>").text(data.mode[0].mode_name + " "+data.mode[0].route[0].route_name+" "+data.mode[0].route[0].direction[0].direction_name),
 			    $("<h2/>").text(predictString.join(', '))
 			);
 		}
 	});
 };
 $(document).ready(function() {
-    updateMBTA();
-    setInterval(updateMBTA, 10000); 
+	updateMBTA();
+	setInterval(updateMBTA, 10000); 
 });
