@@ -1,7 +1,7 @@
 var updateXKCD = function () {
 	var d = new Date();
 	// display only on Mon, Wed, Fri
-	if (d.getDay()%2==0){
+	if (d.getDay()%2==1){
 		$.ajax({
 			url: "http://dynamic.xkcd.com/api-0/jsonp/comic?callback=?",
 			dataType: "json",
