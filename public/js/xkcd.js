@@ -29,11 +29,25 @@ var updateXKCD = function () {
 		  url: url,
 		  method: 'GET',
 		  success: function(data) {
+				var sportsHeadline = "";
+				var scitechHeadline = "";
+				for (var i = 0; i < data.results.length; i++) {
+					if (data.results[i].section=="Sports"){
+						sportsHeadline = data.results[i].title;
+						break;
+					}
+				}
+				for (var i = 0; i < data.results.length; i++) {
+					if (data.results[i].section=="Science"||data.results[i].section=="Technology"){
+						scitechHeadline = data.results[i].title;
+						break;
+					}
+				}
 				$("#xkcd").empty().append(
 				    $("<h3/>").text(data.results[0].title),
 				    $("<h3/>").text(data.results[1].title),
-				    $("<h3/>").text(data.results[2].title),
-				    $("<h3/>").text(data.results[3].title)
+				    $("<h3/>").text(sportsHeadline),
+				    $("<h3/>").text(scitechHeadline)
 				);
 			}
 		}).done(function(result) {
