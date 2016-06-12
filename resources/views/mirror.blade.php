@@ -24,8 +24,8 @@
             <div id=wrapper>
 		<div id="welcome"></div>
 		<div id="date"></div>
-		<div id="xkcd"></div>
 		<div id="mbta"></div>
+		<div id="xkcd"></div>
 	    </div>		
             <div id="weather"></div>
 	    		
