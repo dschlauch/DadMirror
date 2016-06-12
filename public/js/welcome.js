@@ -4,7 +4,7 @@ var updateWelcome = function () {
 	var mins = d.getMinutes();
 	var day = d.getDay();
 	var welcome = "Hi!"
-	$.get("https://dl.dropboxusercontent.com/u/20684161/mirror_message", function(data) {
+	$.get("https://dl.dropboxusercontent.com/u/61127052/mirror_message.txt", function(data) {
 		welcome = data
 		// check if welcome message is empty, and if so, use following system
 		if (welcome==""){
