@@ -80,3 +80,25 @@ i {
 #region {
  font-size: 5em; 
 }
+#scoreboard {
+  width: 500px;
+  height:600px;
+  float:right;
+  text-align: right;
+  clear:right;
+  margin-right: 30px; 
+  padding: 15px;
+}
+#scorealert {
+  width:500px;
+  float:right;
+}
+#linescore {
+  float:right;
+}
+#linescore th, td {
+    border: 1px solid black;
+    overflow: hidden;
+    width: 20px;
+  text-align: center;
+}

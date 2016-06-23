@@ -24,10 +24,11 @@
             <div id=wrapper>
 		<div id="welcome"></div>
 		<div id="date"></div>
-		<div id="xkcd"></div>
 		<div id="mbta"></div>
+		<div id="xkcd"></div>
 	    </div>		
             <div id="weather"></div>
+            <div id="scoreboard">qqqq</div>
 	    		
         </section>
         <p id="greeting">
@@ -38,6 +39,7 @@
         <script type="text/javascript" src="/js/weather.js"></script>
 	<script type="text/javascript" src="/js/xkcd.js"></script>
 	<script type="text/javascript" src="/js/mbta.js"></script>
+	<script type="text/javascript" src="/js/scoreboard.js"></script>
         <script type="text/javascript">
             var gitHash = {{ trim(`git rev-parse HEAD`) }};
                (function checkVersion()
