@@ -1,7 +1,7 @@
 var updateScoreboard = function () {
 	d = new Date();
 	yr = d.getFullYear()
-	day = d.getDate()
+	day = ('0' + d.getDate()).slice(-2)
 	if (d.getHours()<12){ day -= 1}
 	month = ("0" + (d.getMonth() + 1)).slice(-2)
 	var url = "http://gd2.mlb.com/components/game/mlb/year_"+yr+"/month_"+month+"/day_"+day+"/master_scoreboard.json"
@@ -26,7 +26,7 @@ var updateScoreboard = function () {
 
 			html += '<tr><td>'+soxGame.away_name_abbrev+'</td>'
 			for (var i = 0 ; i < 9 ; i++) {
-				if(typeof parseInt(inning_line_score[i].away) === 'number'){
+				if(inning_line_score[i] && inning_line_score[i].away){
 					html += '<td>'+inning_line_score[i].away+'</td>';
 				} else {
 					html += '<td></td>';
@@ -39,7 +39,11 @@ var updateScoreboard = function () {
 
 			html += '<tr><td>'+soxGame.home_name_abbrev+'</td>'
 			for (var i = 0 ; i < 9 ; i++) {
-				if(typeof parseInt(inning_line_score[i].home) === 'number'){
+				if(i>=inning_line_score.length){
+					html += '<td></td>'
+					continue;
+				}
+				if(inning_line_score[i] && inning_line_score[i].home){
 					html += '<td>'+inning_line_score[i].home+'</td>';
 				} else {
 					html += '<td></td>';

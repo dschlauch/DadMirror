@@ -6,11 +6,12 @@ var updateWeather = function () {
     unit: 'f',
     success: function(weather) {
         var skycons = new Skycons({"color": "white"});
+	var humidity = weather.humidity
 	var sunrise = weather.sunrise.split(":")[0] + ":" + (parseInt(weather.sunrise.split(":")[1])<10 ? ('0'+weather.sunrise.split(":")[1]):weather.sunrise.split(":")[1]);
 	var sunset = weather.sunset.split(":")[0] + ":" + (parseInt(weather.sunset.split(":")[1])<10 ? ('0'+weather.sunset.split(":")[1]):weather.sunset.split(":")[1]);
           html = '<canvas id="weather-icon" width="128" height="128"></canvas><h2> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
           html += '<div><i class="fa fa-angle-up"></i>  High '+weather.high + ' <i class="fa fa-angle-down"></i>  Low ' + weather.low + '</div>'
-          html += '<div>'+weather.currently+', '+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+'</div>';
+          html += '<div>'+weather.currently+', '+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+', Humidity:' +humidity+'%</div>';
           html += '<div>Sunrise: '+sunrise+', Sunset: '+sunset+'</div>';
           html += '<div id="forecast"><table id="table_forecast"> \
 		<tr>\
