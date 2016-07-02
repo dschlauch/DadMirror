@@ -9,7 +9,6 @@ var updateScoreboard = function () {
 	month = ("0" + (d.getMonth() + 1)).slice(-2)
 	var url = "http://gd2.mlb.com/components/game/mlb/year_"+yr+"/month_"+month+"/day_"+day+"/master_scoreboard.json"
 
-	window.alert(url);
 	$.ajax({
 	    type: "GET",
 	    url: url,
