@@ -28,7 +28,6 @@ body {
 
 #weather {
   width: 500px;
-  height:600px;
   float:right;
   text-align: right;
   clear:right;
@@ -82,7 +81,6 @@ i {
 }
 #scoreboard {
   width: 500px;
-  height:600px;
   float:right;
   text-align: right;
   clear:right;

@@ -1,10 +1,15 @@
 var updateScoreboard = function () {
 	d = new Date();
 	yr = d.getFullYear()
+	day = d.getDate()
+
+	if (d.getHours()<12){ d.setDate(d.getDate()-1);}
+	
 	day = ('0' + d.getDate()).slice(-2)
-	if (d.getHours()<12){ day -= 1}
 	month = ("0" + (d.getMonth() + 1)).slice(-2)
 	var url = "http://gd2.mlb.com/components/game/mlb/year_"+yr+"/month_"+month+"/day_"+day+"/master_scoreboard.json"
+
+	window.alert(url);
 	$.ajax({
 	    type: "GET",
 	    url: url,

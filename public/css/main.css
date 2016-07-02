@@ -134,7 +134,7 @@ canvas {
 }
 
 #date p{
-    font-size: 4em;
+    font-size: 3em;
 }
 
 #xkcd {
@@ -165,7 +165,7 @@ canvas {
 section {
     width: 90%;
     margin: auto;
-    height:600px;
+    height:900px;
     padding: 0px;
 }
 
