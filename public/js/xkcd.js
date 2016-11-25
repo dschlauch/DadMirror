@@ -13,7 +13,7 @@ var updateXKCD = function () {
 					src: data.img,
 					title: data.alt,
 					alt: data.title,
-					width: "250px"
+					width: "400px"
 				    }),
 				    $("<h5/>").text(data.alt)
 				);

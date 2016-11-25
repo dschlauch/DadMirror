@@ -142,6 +142,11 @@ canvas {
     margin: 0 0 0 0;
     border-bottom: 1px solid gray;
 }
+#xkcd img {
+   -webkit-filter: invert(1);
+   filter: invert(1);
+   }
+
 #mbta {
     width: 400px;
     margin: 0 0 0 0;
