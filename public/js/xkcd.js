@@ -23,7 +23,7 @@ var updateXKCD = function () {
 		document.getElementById("xkcd").innerHTML = "";
 		var url = "https://api.nytimes.com/svc/topstories/v2/home.json";
 		url += '?' + $.param({
-		  'api-key': "e885442cbcb64f48b1660e4f53901d7f"
+		  'api-key': "ea96715099a54d56a3ee721951df09f0"
 		});
 		$.ajax({
 		  url: url,
