@@ -2,6 +2,18 @@ var updateMBTA = function () {
 	var key = "gZy1MzcaiUmM3urqsYGpQQ";
 	var route = "39";
 	var stop = "1937";
+
+	var d = new Date();
+	var n = d.getHours();
+
+	// start at 6am, go to every 20 seconds after noon
+	if(n<6){
+		return;
+	}
+	if(n>11){
+		if(Math.floor(d.getSeconds()/10)%2==1){
+			return;
+	}
 	var mbtaurl = "http://realtime.mbta.com/developer/api/v2/predictionsbystop?api_key="+key+"&stop="+stop+"&route="+route+"&format=json";
 	$.ajax({
 		url: mbtaurl,
