@@ -13,6 +13,7 @@ var updateMBTA = function () {
 	if(n>11){
 		if(Math.floor(d.getSeconds()/10)%2==1){
 			return;
+		}
 	}
 	var mbtaurl = "http://realtime.mbta.com/developer/api/v2/predictionsbystop?api_key="+key+"&stop="+stop+"&route="+route+"&format=json";
 	$.ajax({
