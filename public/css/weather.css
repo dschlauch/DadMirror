@@ -100,3 +100,13 @@ i {
     width: 20px;
   text-align: center;
 }
+#nhllinescore {
+  float:right;
+}
+#nhllinescore th, td {
+    border: 1px solid black;
+    overflow: hidden;
+    width: 40px;
+  text-align: right;
+  white-space: nowrap;
+}

@@ -84,22 +84,25 @@ var updateScoreboard = function () {
 		    jsonpCallback: "loadScoreboard",
 		    success: function(data) {
 				var bruinsGame = null;
+				html = '';
 				for (var i=0; i<data.games.length; i++){
 					if(data.games[i].atn=="Boston"||data.games[i].htn=="Boston"){
 						bruinsGame = data.games[i];
+
+						html += '<table id="nhllinescore">';
+
+						html += '<tr><td></td><td></td></tr>';
+
+						html += '<tr><td>'+ bruinsGame.atn +'</td>';
+						html += '<td>'+bruinsGame.ats +'</td></tr>';
+						html += '<tr><td>'+ bruinsGame.htn +'</td>';
+						html += '<td>'+bruinsGame.hts +'</td></tr>';
+						html += '</table>';
+						html += '<p id="scorealert">'+bruinsGame.bs+', '+ bruinsGame.ts+'</p>'
 					}
 				}
-				//if (!bruinsGame.linescore){return(null)}
-				html = '<table id="linescore">';
-				html += '<tr><td></td><td></td></tr>';
 
-				html += '<tr><td><h2>'+ bruinsGame.atn +'</h2></td>';
-				html += '<td><h2>'+bruinsGame.ats +'</h2></td></tr>';
-				html += '<tr><td><h2>'+ bruinsGame.htn +'</h2></td>';
-				html += '<td><h2>'+bruinsGame.hts +'</h2></td></tr>';
-				html += '</table>';
 
-				html += '<p id="scorealert">'+bruinsGame.bs+', '+ bruinsGame.ts+'</p>'
 
 				$("#scoreboard").html(html);
 			} //success close
