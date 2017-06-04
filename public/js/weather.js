@@ -2,7 +2,7 @@
 var updateWeather = function () {
   $.simpleWeather({
     location: '',
-    woeid: '12758729',
+    woeid: '2457514',
     unit: 'f',
     success: function(weather) {
         var skycons = new Skycons({"color": "white"});
@@ -10,6 +10,7 @@ var updateWeather = function () {
 	var sunrise = weather.sunrise.split(":")[0] + ":" + (parseInt(weather.sunrise.split(":")[1])<10 ? ('0'+weather.sunrise.split(":")[1]):weather.sunrise.split(":")[1]);
 	var sunset = weather.sunset.split(":")[0] + ":" + (parseInt(weather.sunset.split(":")[1])<10 ? ('0'+weather.sunset.split(":")[1]):weather.sunset.split(":")[1]);
           html = '<canvas id="weather-icon" width="128" height="128"></canvas><h2> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
+          html += '<div>Needham</div>';
           html += '<div><i class="fa fa-angle-up"></i>  High '+weather.high + ' <i class="fa fa-angle-down"></i>  Low ' + weather.low + '</div>'
           html += '<div>'+weather.currently+', '+weather.wind.direction+' '+weather.wind.speed+' '+weather.units.speed+', Humidity:' +humidity+'%</div>';
           html += '<div>Sunrise: '+sunrise+', Sunset: '+sunset+'</div>';
@@ -217,7 +218,63 @@ var updateWeather = function () {
     }
   });
 };
+var updateWareham = function () {
+  $.simpleWeather({
+    location: '',
+    woeid: '2359460',
+    unit: 'f',
+    success: function(weather) {
+        var skycons = new Skycons({"color": "white"});
+	var humidity = weather.humidity
+	var sunrise = weather.sunrise.split(":")[0] + ":" + (parseInt(weather.sunrise.split(":")[1])<10 ? ('0'+weather.sunrise.split(":")[1]):weather.sunrise.split(":")[1]);
+	var sunset = weather.sunset.split(":")[0] + ":" + (parseInt(weather.sunset.split(":")[1])<10 ? ('0'+weather.sunset.split(":")[1]):weather.sunset.split(":")[1]);
+          html = '';
+          html += '<div>Wareham</div>';
+          html += '<div id="forecast"><table id="table_forecast"> \
+		<tr>\
+		    <td></td>\
+		    <td>'+weather.forecast[1].day+'</td>\
+		    <td>'+weather.forecast[2].day+'</td>\
+		    <td>'+weather.forecast[3].day+'</td>\
+		    <td>'+weather.forecast[4].day+'</td>\
+		    <td>'+weather.forecast[5].day+'</td>\
+		  </tr>\
+		  <tr>\
+		    <td></td>\
+		    <td><img src="'+weather.forecast[1].thumbnail+'" alt="pic" height="40" width="40"/></td>\
+		    <td><img src="'+weather.forecast[2].thumbnail+'" alt="pic" height="40" width="40"/></td>\
+		    <td><img src="'+weather.forecast[3].thumbnail+'" alt="pic" height="40" width="40"/></td>\
+		    <td><img src="'+weather.forecast[4].thumbnail+'" alt="pic" height="40" width="40"/></td>\
+		    <td><img src="'+weather.forecast[5].thumbnail+'" alt="pic" height="40" width="40"/></td>\
+		  </tr>\
+		  <tr>\
+		    <td><i class="fa fa-angle-up"></i></td>\
+		    <td>'+weather.forecast[1].high+'</td>\
+		    <td>'+weather.forecast[2].high+'</td>\
+		    <td>'+weather.forecast[3].high+'</td>\
+		    <td>'+weather.forecast[4].high+'</td>\
+		    <td>'+weather.forecast[5].high+'</td>\
+		  </tr>\
+		  <tr>\
+		    <td><i class="fa fa-angle-down"></i></td>\
+		    <td>'+weather.forecast[1].low+'</td>\
+		    <td>'+weather.forecast[2].low+'</td>\
+		    <td>'+weather.forecast[3].low+'</td>\
+		    <td>'+weather.forecast[4].low+'</td>\
+		    <td>'+weather.forecast[5].low+'</td>\
+		  </tr>\
+		</table></div>';
+          $("#weather2").html(html);
+
+    },
+    error: function(error) {
+      $("#weather").html('<p>'+error+'</p>');
+    }
+  });
+};
 $(document).ready(function() {
     updateWeather();
+    updateWareham();
     setInterval(updateWeather, 300000);
+    setInterval(updateWareham, 3000000);
 });

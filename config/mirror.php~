@@ -1,10 +1,11 @@
 <?php
 
-$url = 'https://dl.dropboxusercontent.com/u/20684161/greetings';
 
 
-$str = file_get_contents($url);
+$str = "Any given computer program, when running, is obsolete.
+afasfasf
+assssss";
 
 return [
-	'greetings' => explode("\n\n",$str)
+	'greetings' => explode("\n",$str)
 ];

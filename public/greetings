@@ -1,8 +1,4 @@
-<?php
-
-
-
-$str = "'Automatic' simply means that you cannot repair it yourself.
+"Automatic" simply means that you cannot repair it yourself.
 90% of everything is crud.
 A Project Manager is like the madam in a brothel. His job is to see that everything comes off right.
 A Smith & Wesson always beats four aces.
@@ -130,7 +126,7 @@ Don't hit a man when he's down unless you are damned certain he won't get up.
 Don't wear earmuffs in a bed of rattlesnakes.
 Don't worry about what other people are thinking of you. They're too busy worrying about what you are thinking of them.
 Dr. Faustus, call your service.
-During Britain's 'brain drain,' not a single politician left the country.
+During Britain's "brain drain," not a single politician left the country.
 Economics is the only calling in which one can have a lifetime reputation as an expert without ever once being right.
 Education confers understanding, knowledge, and competence; schools confer degrees.
 Enthusiasm wanes, but dullness lasts forever.
@@ -173,7 +169,7 @@ Freedom of the press is limited to those who have one.
 Friends may come and friends may go, but enemies accumulate.
 Frustration is not having anyone else to blame but one's self.
 Get too many irons in your fire and you'll put it out.
-Give all orders verbally. Never write down anything that might go into a 'Pearl Harbor file'.
+Give all orders verbally. Never write down anything that might go into a "Pearl Harbor file".
 Give me an example of pro and con. Progress and Congress.
 Given that Nature limited the intelligence of Man, it seems unfair that she did not limit the stupidity of Man.
 God can't alter history, so he created historians.
@@ -200,7 +196,7 @@ History occurs twice - the first time as tragedy, the second time as farce.
 Honesty in politics is much like oxygen. The higher up you go, the scarcer it becomes.
 Honesty is the best policy - unless, of course, you are dealing with your wife, your girlfriend, your banker, your employer, the I.R.S., your creditors...
 How can you tell when a salesman is lying ? When his lips are moving.
-How come nowadays the word 'honesty' is generally preceded by the phrase 'old-fashioned' ?
+How come nowadays the word "honesty" is generally preceded by the phrase "old-fashioned" ?
 How long a minute is depends upon which side of the bathroom door you're on.
 I get my exercise acting as a pallbearer for my friends who exercise.
 If a cluttered desk is characteristic of a cluttered mind, what does an empty desk mean ?
@@ -376,7 +372,7 @@ Nothing irritates a standard American corporate executive quite so much as the s
 Nothing is illegal if 100 businessmen decide to do it.
 Nothing is really labor unless you would rather be doing something else.
 Nothing motivates a man more than to see his boss put in an honest day's work.
- Odds are, the phrase 'It's none of my business' will be followed by 'but'.
+ Odds are, the phrase "It's none of my business" will be followed by "but".
 Of those teaching in today's schools, 80 percent are paid twice what they are worth and 20 percent are paid half what they are worth.
 Old age is like a burglar. It robs you of all the goodies and leaves the rubbish.
 Old men and comets have long been revered for the same reasons; their long beards and their supposed ability to foretell events.
@@ -412,7 +408,7 @@ Psychopaths aren't born. They are made.
 Rabbits dance at the funeral of the lion.
 Reality precedes perception. Except, of course, in southern California.
 Remember the good old days When juvenile delinquency was observed mainly in juveniles
-Remember when 'There's something in the air' was just a figure of speech
+Remember when "There's something in the air" was just a figure of speech
 Respect for ourselves guides our morals; deference to others governs our manners.
 Revenge is a dish best served cold.
 Roughing it is television without cable.
@@ -421,7 +417,7 @@ Saints engage in introspection while burly sinners run the world.
 Scandal, like hypocrisy, is bipartisan.
 Science has finally found what distinguishes Man from the other beasts: financial worries.
 Serendipity is looking in a haystack for a needle and finding the farmer's daughter.
-Show me anything whereof it may be said 'See, this is new,' and I will show you it hath been.
+Show me anything whereof it may be said "See, this is new," and I will show you it hath been.
 Shrink not from blasphemy - t'will pass for wit.
 Simple pleasures are the last refuge of the complex.
 Since few large pleasures are lent to us on a long lease, it is wise to cultivate a large undergrowth of small pleasures.
@@ -449,7 +445,7 @@ Tell a man that there are 500 million trillion stars in the universe and he will
 Tempt not a desperate man.
 That which is crooked cannot be made straight, although there are psychotherapists who might disagree.
 The Boy Scout credo: sound mind, sound body...take your choice.
-The British parliament is called the 'Mother of Legislatures'. A somewhat similar term is often applied to Congress.
+The British parliament is called the "Mother of Legislatures". A somewhat similar term is often applied to Congress.
 The Devil's greatest triumph was convincing the modern world that he doesn't exist.
 The Russians will never invade us...there's no place to park.
 The attention span of a computer is only as long as its electrical cord.
@@ -528,7 +524,7 @@ The strongest part of any paper form is the perforation.
 The successful enjoyment of vice requires training and long practice.
 The sun ariseth and the sun goeth down, and the same things come alike to the righteous and the wicked.
 The supreme irony of life is that hardly anyone gets out of it alive.
-The tale of the errant entrepreneur: High chair; high school; high hopes; high finance; 'Hi, Warden!'.
+The tale of the errant entrepreneur: High chair; high school; high hopes; high finance; "Hi, Warden!".
 The universe is governed by a committee; no one man could make that many mistakes.
 The very same American textile industry that lobbies hysterically against the import of textile products imports virtually all its textile manufacturing machinery...I wonder why
 The whole of life is futile unless you regard it is a sporting proposition.
@@ -614,7 +610,7 @@ Whenever a system becomes completely defined, some damned fool discovers somethi
 Where you stand on an issue depends upon where you sit.
 Who mourns the falling of a single leaf ?
 Whom the gods would destroy, they first make mad.
-Why do they always start off the evening news with 'Good evening' when all they do is tell you why it isn't ?
+Why do they always start off the evening news with "Good evening" when all they do is tell you why it isn't ?
 Why is there always so much month left at the end of the money ?
 Why long for glory, which one despises as soon as one has it ?
 Women like silent men. They think they're listening.
@@ -642,8 +638,4 @@ You never know how many friends you have until you own a house at the beach.
 You only go around once, and there's not enough gusto for everyone.
 You rarely observe a mob rushing across town to do a good deed.
 You've one mouth and two ears...use them in that proportion.
-Your freedom to swing your arm ends where my nose begins.";
-
-return [
-	'greetings' => explode("\n",$str)
-];
+Your freedom to swing your arm ends where my nose begins.

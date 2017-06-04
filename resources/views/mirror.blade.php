@@ -28,6 +28,7 @@
 		<div id="xkcd"></div>
 	    </div>		
             <div id="weather"></div>
+            <div id="weather2"></div>
             <div id="scoreboard"></div>
 	    		
         </section>
