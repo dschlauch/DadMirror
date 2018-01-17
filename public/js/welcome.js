@@ -15,7 +15,7 @@ var updateWelcome = function () {
 			} else if (hours < 12 ){ 	// Begin generic welcome messages
 				welcome = "Good Morning!";
 			} else if (hours < 17 ){ 
-				welcome = "Good Afternoonq!";
+				welcome = "Good Afternoon!";
 			} else if (hours < 21 ){ 
 				welcome = "Good Evening!";
 			} else {
